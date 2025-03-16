@@ -1,6 +1,8 @@
 
 import AboutMeMain from './component/aboutMeSection/AboutMeMain'
+import ContactMe from './component/contactMeSec/ContactMe'
 import ExperienceMain from './component/experienceSection/ExperienceMain'
+import FooterMain from './component/footerSection/FooterMain'
 import HeroMai from './component/heroSection/HeroMai'
 import SuHero from './component/heroSection/SuHero'
 import ProjectMain from './component/projectSection/ProjectMain'
@@ -21,6 +23,9 @@ function App() {
      <SubSkills/>
      <ExperienceMain/>
      <ProjectMain/>
+     <ContactMe/>
+     <FooterMain/>
+
   </main>
   )
 }
