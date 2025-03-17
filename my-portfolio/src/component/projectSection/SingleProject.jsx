@@ -1,9 +1,15 @@
 import React from "react";
 import { BiSolidRightTopArrowCircle } from "react-icons/bi";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../framerMotion/variants";
 
 const SingleProject = ({ name, year, align, image, link }) => {
   return (
-    <div
+    <motion.div
+      variants={fadeIn("up", 0.2)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0 }}
       className={`flex w-full sm:flex-col-reverse items-center gap-8 
         ${
           align === "left" ? "md:flex-row" : "md:flex-row-reverse"
@@ -18,11 +24,16 @@ const SingleProject = ({ name, year, align, image, link }) => {
         >
           {year}
         </h2>
-        <a href={link} className={
-            `text-lg flex gap-2 text-cyan hover:text-orange transition-all
+        <a
+          href={link}
+          className={`text-lg flex gap-2 text-cyan hover:text-orange transition-all
             duration-500 cursor-pointer sm:justify-self-center 
-            ${align === "left" ? "md:justify-self-end" : "md:justify-self-start"}`
-            } target="_blank" rel="noopener noreferrer">
+            ${
+              align === "left" ? "md:justify-self-end" : "md:justify-self-start"
+            }`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           View <BiSolidRightTopArrowCircle />
         </a>
       </div>
@@ -31,7 +42,7 @@ const SingleProject = ({ name, year, align, image, link }) => {
         <div className="w-full h-full bg-cyan opacity-50 absolute top-0 left-0 hover:opacity-0 transition-all duration-500 md:block sm:hidden   "></div>
         <img src={image} className="w-full h-full" alt="project" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
