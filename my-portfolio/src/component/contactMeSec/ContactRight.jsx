@@ -5,7 +5,7 @@ import ContactSocial from './ContactSocial'
 const ContactRight = () => {
   return (
     <div className='flex flex-col  items-center justify-center gap-12'>
-        <img src="../../public/images/email-image.png" 
+        <img src="../../src/assets/images/email-image.png" 
         alt="contact me"
         className='max-w-[300px]'
         />
