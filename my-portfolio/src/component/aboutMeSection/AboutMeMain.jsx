@@ -7,7 +7,7 @@ import { fadeIn } from "../../framerMotion/variants";
 const AboutMeMain = () => {
   return (
     <div
-      id="about"
+      id="about"   
       className="flex md:flex-row sm:flex-col gap-10 px-4  max-w-[1200px] mx-auto  mt-[100px] justify-between items-center"
     >
       <motion.div
