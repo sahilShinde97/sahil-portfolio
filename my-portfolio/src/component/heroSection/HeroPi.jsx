@@ -13,7 +13,7 @@ const HeroPi = () => {
       className="h-full flex items-center justify-center"
     >
       <img
-        src="../../src/assets/images/sahil.png"
+        src="/public/images/sahil.png"
         alt="Sahil Shinde"
         className="max-h-[450px] w-auto"
       />
