@@ -28,10 +28,10 @@ const projects = [
   },
   {
     name: "Portfolio",
-    year: "Aug2024",
+    year: "Feb2025",
     align: "left",
     image: "../../public/images/portfolio-image.png",
-    link: "https://github.com/sahilShinde97/sahilportfolio",
+    link: "https://github.com/sahilShinde97/sahil-portfolio",
   },
 ];
 
