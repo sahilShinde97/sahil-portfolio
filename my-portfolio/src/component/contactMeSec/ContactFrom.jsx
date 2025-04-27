@@ -42,7 +42,7 @@ const ContactFrom = () => {
   };
 
   return (
-    <div>
+    <div className="p-6">
       <p className="text-cyan">{success}</p>
       <form
         className="flex flex-col gap-4 text-white"
